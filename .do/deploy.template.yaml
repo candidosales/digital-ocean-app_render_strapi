@@ -1,0 +1,29 @@
+spec:
+  name: strapi
+  services:
+    - environment_slug: node-js
+      github:
+        branch: main
+        deploy_on_push: true
+        repo: candidosales/digital-ocean-app-strapi
+      name: strapi
+      build_command: yarn install && yarn build
+      run_command: yarn start
+      envs:
+        - key: JWT_SECRET
+        - key: ADMIN_JWT_SECRET
+        - key: APP_KEYS
+        - key: API_TOKEN_SALT
+        - key: CLOUDINARY_NAME
+        - key: CLOUDINARY_KEY
+        - key: CLOUDINARY_SECRET
+        - key: DATABASE_URL
+          scope: RUN_AND_BUILD_TIME
+          value: ${db.DATABASE_URL}
+  databases:
+    - name: db
+  envs:
+    - key: URL
+      value: ${APP_URL}
+    - key: NODE_ENV
+      value: production

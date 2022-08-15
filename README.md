@@ -14,14 +14,14 @@ This example deploys self-hosted version of [Strapi](https://strapi.io/). Intern
 
 ### Digital Ocean
 
-[![Deploy to DigitalOcean](https://www.deploytodo.com/do-btn-blue.svg)](https://cloud.digitalocean.com/apps/new?repo=https://github.com/candidosales/digital-ocean-app-strapi/tree/main)
+[![Deploy to DigitalOcean](https://www.deploytodo.com/do-btn-blue.svg)](https://cloud.digitalocean.com/apps/new?repo=https://github.com/candidosales/digital-ocean-app_render_strapi/tree/main)
 
 - Click the Digital Ocean button 👆
 - Add the environment variables
 
 ### Render
 
-[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/candidosales/digital-ocean-app-strapi)
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/candidosales/digital-ocean-app_render_strapi)
 
 - Click the Deploy to Render button 👆
 

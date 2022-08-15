@@ -4,5 +4,5 @@ services:
     github:
       branch: main
       deploy_on_push: true
-      repo: candidosales/digital-ocean-app-strapi
+      repo: candidosales/digital-ocean-app_render_strapi
     name: strapi

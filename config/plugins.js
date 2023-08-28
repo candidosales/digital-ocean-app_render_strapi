@@ -19,8 +19,11 @@ module.exports = ({ env }) => ({
       // },
       // # LOCAL
       provider: "local",
+      sizeLimit: 100000,
       providerOptions: {
-        sizeLimit: 100000,
+        localServer: {
+          maxAge: 86400000, // 86.400.000 ms = 24h. Serve static assets with an efficient cache policy. Koa, Browser cache max-age in milliseconds. defaults to 0
+        },
       },
     },
   },
